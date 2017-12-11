@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source /opt/ros/indigo/setup.bash
+source $HOME/catkin_ws/devel/setup.bash
+/home/user/ROS_Box/tserv &
+jupyter notebook --config='/home/user/ROS_Box/jupyter_notebook_config.py' &
+sleep 5 && conky --config=/home/user/ROS_Box/conkyrc &
